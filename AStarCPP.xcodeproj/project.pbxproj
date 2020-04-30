@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		13BB1DAD2456937B007565C8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 13BB1DAC2456937B007565C8 /* main.cpp */; };
+		13BB1DB92457E9B0007565C8 /* CustomMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 13BB1DB72457E9B0007565C8 /* CustomMap.cpp */; };
+		13BB1DBC2457ECD6007565C8 /* Intersection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 13BB1DBA2457ECD6007565C8 /* Intersection.cpp */; };
+		13BB1DC224590C41007565C8 /* PathPlanner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 13BB1DC024590C41007565C8 /* PathPlanner.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,12 @@
 /* Begin PBXFileReference section */
 		13BB1DA92456937B007565C8 /* AStarCPP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AStarCPP; sourceTree = BUILT_PRODUCTS_DIR; };
 		13BB1DAC2456937B007565C8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		13BB1DB72457E9B0007565C8 /* CustomMap.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CustomMap.cpp; sourceTree = "<group>"; };
+		13BB1DB82457E9B0007565C8 /* CustomMap.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CustomMap.hpp; sourceTree = "<group>"; };
+		13BB1DBA2457ECD6007565C8 /* Intersection.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Intersection.cpp; sourceTree = "<group>"; };
+		13BB1DBB2457ECD6007565C8 /* Intersection.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Intersection.hpp; sourceTree = "<group>"; };
+		13BB1DC024590C41007565C8 /* PathPlanner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PathPlanner.cpp; sourceTree = "<group>"; };
+		13BB1DC124590C41007565C8 /* PathPlanner.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PathPlanner.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,12 @@
 			isa = PBXGroup;
 			children = (
 				13BB1DAC2456937B007565C8 /* main.cpp */,
+				13BB1DB72457E9B0007565C8 /* CustomMap.cpp */,
+				13BB1DB82457E9B0007565C8 /* CustomMap.hpp */,
+				13BB1DBA2457ECD6007565C8 /* Intersection.cpp */,
+				13BB1DBB2457ECD6007565C8 /* Intersection.hpp */,
+				13BB1DC024590C41007565C8 /* PathPlanner.cpp */,
+				13BB1DC124590C41007565C8 /* PathPlanner.hpp */,
 			);
 			path = AStarCPP;
 			sourceTree = "<group>";
@@ -119,7 +134,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13BB1DBC2457ECD6007565C8 /* Intersection.cpp in Sources */,
+				13BB1DC224590C41007565C8 /* PathPlanner.cpp in Sources */,
 				13BB1DAD2456937B007565C8 /* main.cpp in Sources */,
+				13BB1DB92457E9B0007565C8 /* CustomMap.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +256,7 @@
 		13BB1DB12456937B007565C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3Q4VX7VPRW;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -248,6 +267,7 @@
 		13BB1DB22456937B007565C8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3Q4VX7VPRW;
 				ENABLE_HARDENED_RUNTIME = YES;

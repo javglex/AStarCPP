@@ -7,9 +7,18 @@
 //
 
 #include <iostream>
+#include <vector>
+#include "CustomMap.hpp"
+
+using namespace std;
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+
+    std::cout << "Hello, Maps!\n";
+    
+    CustomMap *myMap = new CustomMap();
+    
+    cout<<myMap->mapStats()<<endl;
+    
     return 0;
 }
